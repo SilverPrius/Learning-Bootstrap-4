@@ -26,62 +26,77 @@
                 <label for="fullName">Full Name</label>
                 <input type="text" class="form-control" id="fullName" placeholder="Full Name">
             </div>
-        </form>
-        <label for="username">Username</label>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text">
-                    <i class="fa-solid fa-at"></i>
-                </span>
+
+            <label for="username">Username</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fa-solid fa-at"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" id="username" placeholder="Username">
             </div>
-            <input type="text" class="form-control" id="username" placeholder="Full Name">
-        </div>
-        <label for="email">Email<small class="text-muted"> (Optional)</small></label>
-        <div class="input-group mb-3">
-            <input type="email" class="form-control" id="email" placeholder="you@example.com">
-        </div>
-        <label for="address">Address</label>
-        <div class="input-group mb-3">
-            <input type="email" class="form-control" id="address" placeholder="1234 Market St.">
-        </div>
-        <label for="address2">Address 2<small class="text-muted"> (Optional)</small></label>
-        <div class="input-group mb-3">
-            <input type="email" class="form-control" id="address2" placeholder="Apartment or Suite">
-        </div>
-        <label for="specialNotes">Special Notes<small class="text-muted"> (Optional)</small></label>
-        <textarea class="form-control" id="specialNotes" rows="3"></textarea>
-        <small id="passwordHelpBlock" class="form-text text-muted mb-3">
-            Include any special requests you have for us!
-        </small>
-        <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label" for="customCheck1">Shipping address is the same as billing</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck2">
-            <label class="custom-control-label" for="customCheck2">Save my info for next time</label>
-          </div>
-          <hr>
-          <h4>Shipping Options</h4>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-            <label class="custom-control-label" for="customRadio1">Same Day Shipping</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-            <label class="custom-control-label" for="customRadio2">Next Day Shipping</label>
-          </div>
-          <div class="custom-control custom-radio mb-3">
-            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-            <label class="custom-control-label" for="customRadio3">3-5 Business Days</label>
-          </div>
-          <button class="btn btn-primary form-control">Continue To Checkout</button>
+            <label for="email">Email<span class="text-muted"> (Optional)</span></label>
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+            <label for="address1">Address</label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="address1" placeholder="1234 Market St.">
+            </div>
+            <label for="address2">Address 2<span class="text-muted"> (Optional)</span></label>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="address2" placeholder="Apartment or Suite">
+            </div>
+            <label for="specialNotes">Special Notes<span class="text-muted"> (Optional)</span></label>
+            <textarea class="form-control" id="specialNotes" rows="3"></textarea>
+            <small id="passwordHelpBlock" class="form-text text-muted mb-3">
+                Include any special requests you have for us!
+            </small>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Shipping address is the same as billing</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Save my info for next time</label>
+            </div>
+            <hr>
+            <h4>Shipping Options</h4>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="sameDay" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="sameDay">Same Day Shipping</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="nextDay" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="nextDay">Next Day Shipping</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input type="radio" id="3-5" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label mb-3" for="3-5">3-5 Business Days</label>
+              </div>
+            <input type="submit" value="Continue To Checkout" class="btn btn-primary btn-block"></input>
+        </form>
     </div>
 
 
     <h1 class="text-center display-2">Part 2</h1>
-    <div class="container border rounded" style="max-width: 400px;">
-        Write your second form here (and delete this line!)
+    <div class="container border rounded p-5 mb-5" style="max-width: 400px;">
+        <h3 class="text-center mb-3">Sign In</h3>
+        <form>
+            <div class="form-group mb-3">
+                <input type="email" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group mb-3">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+        </form>
+        <div class="custom-control custom-checkbox mb-3">
+            <input type="checkbox" class="custom-control-input" id="rememberMe">
+            <label class="custom-control-label" for="rememberMe">Remember me</label>
+        </div>
+        <input type="submit" value="Sign In" class="btn btn-info btn-lg btn-block mb-3"></input>
+        <p class="text-center">Not a member? <a class="text-info" href="#">Register</a></p>
     </div>
 
 
